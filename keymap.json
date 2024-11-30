@@ -1,0 +1,45 @@
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "space f": "editor::Format",
+      "space a": "command_palette::Toggle",
+      "space r": "editor::RevertSelectedHunks",
+      "space c a": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "use_layout_keys": true,
+    "bindings": {
+      "space x": "pane::CloseActiveItem",
+      "space s": "file_finder::Toggle",
+      "H": "pane::ActivatePrevItem",
+      "L": "pane::ActivateNextItem",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "tab": "pane::AlternateFile",
+      "space n": "project_panel::ToggleFocus",
+      "v i e": "editor::SelectAll",
+      "space b c": "pane::CloseInactiveItems"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "f1": "workspace::NewTerminal",
+      "f2": "pane::CloseActiveItem",
+      "tab": "pane::ActivateNextItem"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "q": "workspace::ToggleLeftDock",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "p": "project_panel::Paste"
+    }
+  }
+]

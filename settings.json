@@ -1,0 +1,26 @@
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "vim_mode": true,
+  "ui_font_size": 17,
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 14,
+  "format_on_save": "off",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Gruvbox Material"
+  },
+  "relative_line_numbers": true,
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  }
+}
