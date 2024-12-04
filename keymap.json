@@ -5,15 +5,15 @@
       "space f": "editor::Format",
       "space a": "command_palette::Toggle",
       "space r": "editor::RevertSelectedHunks",
-      "space c a": "editor::ToggleCodeActions",
-      "enter": "editor::SelectLargerSyntaxNode",
-      "space enter": "editor::SelectSmallerSyntaxNode"
+      "space c a": "editor::ToggleCodeActions"
     }
   },
   {
     "context": "vim_mode == normal",
     "use_layout_keys": true,
     "bindings": {
+      "enter": ["workspace::SendKeystrokes", "o escape"],
+      "space enter": ["workspace::SendKeystrokes", "k o escape"],
       "space x": "pane::CloseActiveItem",
       "space s": "file_finder::Toggle",
       "H": "pane::ActivatePrevItem",
@@ -25,7 +25,11 @@
       "space q": "diagnostics::Deploy",
       "space v": "workspace::NewSearch",
       "space d": "outline::Toggle",
-      "space t b": "editor::ToggleGitBlame"
+      "space t b": "editor::ToggleGitBlame",
+      "space l": [
+        "workspace::SendKeystrokes",
+        "y i w o console.log('Logging space escape p a ' , escape p a ) escape"
+      ]
     }
   },
   {
