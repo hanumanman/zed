@@ -5,7 +5,9 @@
       "space f": "editor::Format",
       "space a": "command_palette::Toggle",
       "space r": "editor::RevertSelectedHunks",
-      "space c a": "editor::ToggleCodeActions"
+      "space c a": "editor::ToggleCodeActions",
+      "enter": "editor::SelectLargerSyntaxNode",
+      "space enter": "editor::SelectSmallerSyntaxNode"
     }
   },
   {
@@ -19,8 +21,18 @@
       "ctrl-j": "terminal_panel::ToggleFocus",
       "tab": "pane::AlternateFile",
       "space n": "project_panel::ToggleFocus",
-      "v i e": "editor::SelectAll",
-      "space b c": "pane::CloseInactiveItems"
+      "space b c": "pane::CloseInactiveItems",
+      "space q": "diagnostics::Deploy",
+      "space v": "workspace::NewSearch",
+      "space d": "outline::Toggle",
+      "space t b": "editor::ToggleGitBlame"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "v": "editor::SelectLargerSyntaxNode",
+      "space v": "editor::SelectSmallerSyntaxNode"
     }
   },
   {
@@ -32,7 +44,7 @@
     }
   },
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile",
       "q": "workspace::ToggleLeftDock",
