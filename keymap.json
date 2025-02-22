@@ -9,8 +9,7 @@
     }
   },
   {
-    "context": "vim_mode == normal",
-    "use_layout_keys": true,
+    "context": "vim_mode == normal && !menu",
     "bindings": {
       "enter": ["workspace::SendKeystrokes", "o escape"],
       "space enter": ["workspace::SendKeystrokes", "k o escape"],
@@ -20,7 +19,7 @@
       "L": "pane::ActivateNextItem",
       "ctrl-j": "terminal_panel::ToggleFocus",
       "tab": "pane::AlternateFile",
-      "space n": "project_panel::ToggleFocus",
+      ",": "project_panel::ToggleFocus",
       "space b c": "pane::CloseInactiveItems",
       "space q": "diagnostics::Deploy",
       "space v": "workspace::NewSearch",
@@ -29,7 +28,9 @@
       "space l": [
         "workspace::SendKeystrokes",
         "y i w o console.log('Logging space escape p a ' , escape p a ) escape"
-      ]
+      ],
+      // Entire textobjects
+      "v i e": "editor::SelectAll"
     }
   },
   {
@@ -52,6 +53,7 @@
     "bindings": {
       "a": "project_panel::NewFile",
       "q": "workspace::ToggleLeftDock",
+      ",": "workspace::ToggleLeftDock",
       "r": "project_panel::Rename",
       "d": "project_panel::Delete",
       "x": "project_panel::Cut",
