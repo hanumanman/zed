@@ -53,7 +53,8 @@
       "f1": "workspace::NewTerminal",
       "f2": "pane::CloseActiveItem",
       "tab": "pane::ActivateNextItem",
-      "ctrl-k": "workspace::ToggleZoom"
+      "ctrl-k": "workspace::ToggleZoom",
+      "ctrl-j": "workspace::ToggleBottomDock"
     }
   },
 

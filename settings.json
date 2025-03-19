@@ -12,16 +12,17 @@
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light Hard",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Github Dark Dimmed"
   },
   "vim_mode": true,
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "ui_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 17,
+  "buffer_font_size": 15,
   "ui_font_size": 16,
   "ui_font_weight": 600,
   "buffer_font_weight": 500,
 
+  "soft_wrap": "editor_width",
   "format_on_save": "off",
   "code_actions_on_format": {
     "source.organizeImports": true
