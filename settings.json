@@ -1,18 +1,26 @@
 {
+  "context_servers": {
+    "mcp-server-context7": {
+      "source": "extension",
+      "enabled": true,
+      "settings": {
+        "default_minimum_tokens": "10000"
+      }
+    }
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
-  "assistant": {
+  "agent": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
-    },
-    "version": "2"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
+    }
   },
   "theme": {
     "mode": "dark",
     "light": "Gruvbox Light Hard",
-    "dark": "Github Dark Dimmed"
+    "dark": "VSCode Dark Modern"
   },
   "vim_mode": true,
   "buffer_font_family": "JetBrainsMono Nerd Font",
@@ -23,7 +31,7 @@
   "buffer_font_weight": 500,
 
   "soft_wrap": "editor_width",
-  "format_on_save": "off",
+  "format_on_save": "prettier",
   "code_actions_on_format": {
     "source.organizeImports": true
   },

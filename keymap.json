@@ -2,7 +2,7 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space f": "editor::Format",
+      "space f": "workspace::Save",
       "space a": "command_palette::Toggle",
       "space c a": "editor::ToggleCodeActions",
 
@@ -28,7 +28,7 @@
       "space x": "pane::CloseActiveItem",
       "H": "pane::ActivatePreviousItem",
       "L": "pane::ActivateNextItem",
-      "space b c": "pane::CloseInactiveItems",
+      "space b c": "pane::CloseOtherItems",
 
       // Telescope
       "space s": "file_finder::Toggle",
