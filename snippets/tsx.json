@@ -1,0 +1,45 @@
+{
+  "Console log": {
+    "prefix": "clg",
+    "body": [
+      "console.log($0);"
+    ],
+    "description": "Console log"
+  },
+  "For in loop": {
+    "prefix": "forin",
+    "body": [
+      "for (const ${1:key} in ${2:object}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For...in loop"
+  },
+  "For loop (let i = 0; i < len; i++)": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0; ${1:i} < ${2:length}; ${1:i}++) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "Basic for loop"
+  },
+  "For loop (const item of items)": {
+    "prefix": "forof",
+    "body": [
+      "for (const ${1:item} of ${2:items}) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "For...of loop"
+  },
+  "ForEach": {
+    "prefix": "foreach",
+    "body": [
+      "${1:items}.forEach((${2:item}) => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "forEach method"
+  }
+}

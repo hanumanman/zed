@@ -1,45 +1,70 @@
 {
-  "context_servers": {
-    "mcp-server-context7": {
-      "source": "extension",
-      "enabled": true,
-      "settings": {
-        "default_minimum_tokens": "10000"
-      }
-    }
+  "disable_ai": true,
+  // "show_edit_predictions": false,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
   },
-  "features": {
-    "edit_prediction_provider": "zed"
+  "project_panel": {
+    "dock": "left",
   },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "edit_predictions": {
+    "mode": "subtle",
+    "copilot": {
+      "enable_next_edit_suggestions": false,
+    },
+    "provider": "zed",
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true,
+  },
+  "agent_servers": {},
+  "context_servers": {},
   "agent": {
+    "dock": "right",
+    "tool_permissions": {
+      "default": "allow",
+    },
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-4.1"
-    }
+      "provider": "opencode",
+      "model": "minimax-m2.5-free",
+    },
   },
   "theme": {
     "mode": "dark",
-    "light": "Gruvbox Light Hard",
-    "dark": "VSCode Dark Modern"
+    "light": "One Light",
+    "dark": "VSCode Dark Modern",
   },
   "vim_mode": true,
-  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_family": "JetBrainsMonoNL Nerd Font",
   "ui_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 15,
-  "ui_font_size": 16,
+  "ui_font_size": 17,
   "ui_font_weight": 600,
   "buffer_font_weight": 500,
 
   "soft_wrap": "editor_width",
-  "format_on_save": "prettier",
+  "format_on_save": "on",
   "code_actions_on_format": {
-    "source.organizeImports": true
+    "source.organizeImports": true,
   },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "git": {
     "inline_blame": {
-      "enabled": false
-    }
+      "enabled": false,
+    },
   },
-  "current_line_highlight": "gutter"
+  "current_line_highlight": "gutter",
+  "completions": {
+    "words": "enabled",
+    "words_min_length": 2,
+  },
 }

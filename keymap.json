@@ -2,73 +2,50 @@
   {
     "context": "VimControl && !menu",
     "bindings": {
-      "space f": "workspace::Save",
       "space a": "command_palette::Toggle",
+      "space f": "workspace::Save",
+      "ctrl-shift-space": "editor::ShowSignatureHelp",
       "space c a": "editor::ToggleCodeActions",
-
-      "space h r": "git::Restore",
-      "space h p": "git::Diff"
-    }
+      "space r": "editor::Rename",
+    },
   },
   {
     "context": "vim_mode == normal && !menu",
     "bindings": {
-      // Utils
-      "space l": [
-        "workspace::SendKeystrokes",
-        "y i w o console.log('Logging space escape p a ' , escape p a ) escape"
-      ],
-      "enter": ["workspace::SendKeystrokes", "o escape"],
-      "space enter": ["workspace::SendKeystrokes", "k o escape"],
-      ",": "project_panel::ToggleFocus",
-      "ctrl-j": "terminal_panel::ToggleFocus",
-
-      // Tab control
-      "tab": "pane::AlternateFile",
-      "space x": "pane::CloseActiveItem",
-      "H": "pane::ActivatePreviousItem",
       "L": "pane::ActivateNextItem",
-      "space b c": "pane::CloseOtherItems",
-
-      // Telescope
+      "H": "pane::ActivatePreviousItem",
+      "space x": "pane::CloseActiveItem",
       "space s": "file_finder::Toggle",
-      "space q": "diagnostics::Deploy",
-      "space d w": "workspace::NewSearch",
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "space e": "workspace::ToggleLeftDock",
+      "] d": "editor::GoToDiagnostic",
+      "space b c": "pane::CloseOtherItems",
       "space d s": "outline::Toggle",
-      "space h b": "editor::ToggleGitBlameInline"
-    }
+      "space d w": "pane::DeploySearch",
+      "space i j": "workspace::ToggleRightDock",
+    },
   },
   {
-    "context": "vim_mode == visual",
+    "context": "!menu && vim_mode == insert",
     "bindings": {
-      "v": "editor::SelectLargerSyntaxNode",
-      "space v": "editor::SelectSmallerSyntaxNode"
-    }
+      "ctrl-j": "editor::ShowSignatureHelp",
+    },
   },
-
-  // Terminal
   {
     "context": "Terminal",
     "bindings": {
-      "f1": "workspace::NewTerminal",
-      "f2": "pane::CloseActiveItem",
-      "tab": "pane::ActivateNextItem",
       "ctrl-k": "workspace::ToggleZoom",
-      "ctrl-j": "workspace::ToggleBottomDock"
-    }
+      "f1": "workspace::NewTerminal",
+      "alt-]": "tab_switcher::Toggle",
+      "ctrl-n": null,
+      "ctrl-p": null,
+    },
   },
-
-  // File explorer
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "a": "project_panel::NewFile",
-      "q": "workspace::ToggleLeftDock",
-      ",": "workspace::ToggleLeftDock",
+      "space e": "workspace::ToggleLeftDock",
       "r": "project_panel::Rename",
-      "d": "project_panel::Delete",
-      "x": "project_panel::Cut",
-      "p": "project_panel::Paste"
-    }
-  }
+    },
+  },
 ]

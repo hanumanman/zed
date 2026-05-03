@@ -1,0 +1,49 @@
+{
+  "git_panel": {
+    "tree_view": true
+  },
+  "agent_servers": {
+    "opencode": {
+      "type": "registry"
+    }
+  },
+  "context_servers": {
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "default_minimum_tokens": "10000",
+      },
+    },
+  },
+  "features": {
+    "edit_prediction_provider": "copilot",
+  },
+  "agent": {
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "oswe-vscode-prime",
+    },
+  },
+  "theme": "Kanagawa Wave",
+  "vim_mode": true,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 15,
+  "ui_font_size": 16,
+  "ui_font_weight": 600,
+  "buffer_font_weight": 500,
+
+  "soft_wrap": "editor_width",
+  "format_on_save": "on",
+  "code_actions_on_format": {
+    "source.organizeImports": true,
+  },
+  "relative_line_numbers": "enabled",
+  "git": {
+    "inline_blame": {
+      "enabled": false,
+    },
+  },
+  "current_line_highlight": "gutter",
+}
